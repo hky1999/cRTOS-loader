@@ -40,3 +40,8 @@ chrt -f ./loader <executable path> <arguments for executable>
 This program is licensed under version 2 of Apache license.
 
 You can find a copy of the license in the `LICENSE` file.
+
+## Authors
+
+This is an creation of ChungFan Yang <chungfan.yang@fixstars.com> 
+from Fixstars corporation.

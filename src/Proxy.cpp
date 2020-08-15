@@ -465,7 +465,15 @@ void Proxy::run() {
                     /* New slot within kernel should be auto registered by
                      * opening shaodw file during fork */
 
-                    /* Obtain the new slot number */
+                    /* Obtain the new slot number by reopening */
+
+                    close(this->fd);
+                    this->fd = open(shadow.c_str(), O_RDWR);
+
+                    if (this->fd < 0) {
+                        perror("Error on opening shadow process");
+                        throw std::runtime_error("Fail to open shadow process file");
+                    }
 
                     this->_self_init();
 

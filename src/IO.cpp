@@ -49,6 +49,8 @@ IO::IO(std::string ip_addr, int port, bool verbose) :
 
     memset(&this->serv_addr, '0', sizeof(this->serv_addr));
 
+	std::cout << "IO::IO connect to " << ip_addr  << " on port "<<  port<< std::endl;
+
     this->serv_addr.sin_family = AF_INET;
     this->serv_addr.sin_port = htons(port);
     ret = inet_pton(AF_INET, ip_addr.c_str(), &this->serv_addr.sin_addr);

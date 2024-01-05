@@ -112,6 +112,8 @@ int main(int argc, char *argv[], char *envp[]) {
 
     std::string shadow = readenv("SHADOWPROC", "/dev/shadow-process0");
 
+	std::cout << "get shadow " << shadow << std::endl;
+
     auto io = IO("172.16.0.2", 42, verbose);
 
     VERBOSE("Testing Communication...");

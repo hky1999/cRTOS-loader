@@ -24,6 +24,6 @@
             x; \
     } while(0);
 
-#define VERBOSE(x) _VERBOSE(std::clog << x << std::endl)
+#define VERBOSE(x) _VERBOSE(std::cout << x << std::endl)
 
 #endif // __VERBOSE_HPP__

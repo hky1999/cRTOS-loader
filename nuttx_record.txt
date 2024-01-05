@@ -1,0 +1,694 @@
+cRTOS Daemon: Starting...
+
+cRTOS Daemon: Initializing Network (eth0)...
+cRTOS: Initialized! port: 42
+
+cRTOS: Waiting for client
+cRTOS: New incoming connection
+cRTOS: Connection accepted
+
+cRTOS: Waiting for command
+cRTOS: got PING, sent PONG...
+
+cRTOS: Waiting for command
+allocated: 8b3 bytes
+Remote exec: path: /bin/echo, priority: 90, shadow_tcb: 3cf9000000000000, argc: 2
+rexec: Remote exec: /bin/echo, with priority: 90
+rexec: New TCB: 0x00000001011c63b0
+rexec: kstack range: 1011c6850 - 1011c8850
+group_setuptaskfiles: pid [0] group_setuptaskfiles
+group_setupstreams: pid [0] group_setupstreams
+fs_fdopen: pid 0 open fd 0
+fs_fdopen: pid 0 open fd 1
+fs_fdopen: pid 0 open fd 2
+rexec: LINUX SOCK: 3
+rexec: LINUX TCB 0, PID 3cf9
+temp_map: Temp map 8000000 - 8001000
+rexec: activate: new task=3
+
+cRTOS: Waiting for client
+rexec_trampoline: Entering rExec Trampoline: /bin/echo
+_tux_exec: ARGV:
+_tux_exec: argv[0] /bin/echo
+_tux_exec: argv[1] Hello World from sRTOS!
+_tux_exec: TOTAL: 2
+tux_delegate: Delegating syscall 4 to linux
+_tux_exec: Path: /bin/echo, size: 0x7a90
+tux_open_delegate: Open/Socket syscall 2, path: /bin/echo, flag: 0
+tux_open_delegate: Local open Flags: 0x1
+tux_local: Local syscall 2, 581
+tux_open_delegate: Unknown error
+tux_delegate: Delegating syscall 2 to linux
+tux_open_delegate: Open/Socket fd: 5
+tux_delegate: Delegating syscall 0 to linux
+tux_file_delegate: Multiplexed File related syscall 3, fd: 5
+tux_delegate: Delegating syscall 3 to linux
+_tux_exec: Testing header...
+_tux_exec: ELF magic verified
+_tux_exec: x86-64 ELF verified
+_tux_exec: Wiping Memory Map:
+_tux_exec: Wiping PDAs:
+tux_delegate: Delegating syscall 59 to linux
+_tux_exec: Entry point: 0x401800
+_tux_exec: ELF header size: 0x40
+_tux_exec: Program header: 0x40
+_tux_exec: Program header size: 0x38
+_tux_exec: Program count: 0x9
+_tux_exec: Section header: 0x7350
+_tux_exec: Section header size: 0x40
+_tux_exec: Section count: 0x1d
+_tux_exec: Dynamic linked ELF detected!
+_tux_exec: The interpreter is /lib64/ld-linux-x86-64.so.2
+_tux_exec: Loading the interpreter instead of /bin/echo
+_tux_exec: ARGV:
+_tux_exec: argv[0] /lib64/ld-linux-x86-64.so.2
+_tux_exec: argv[1] /bin/echo
+_tux_exec: argv[2] Hello World from sRTOS!
+_tux_exec: TOTAL: 3
+tux_delegate: Delegating syscall 4 to linux
+_tux_exec: Path: /lib64/ld-linux-x86-64.so.2, size: 0x27b48
+tux_open_delegate: Open/Socket syscall 2, path: /lib64/ld-linux-x86-64.so.2, flag: 0
+tux_open_delegate: Local open Flags: 0x1
+tux_local: Local syscall 2, 581
+tux_open_delegate: Unknown error
+tux_delegate: Delegating syscall 2 to linux
+tux_open_delegate: Open/Socket fd: 5
+tux_delegate: Delegating syscall 0 to linux
+tux_file_delegate: Multiplexed File related syscall 3, fd: 5
+tux_delegate: Delegating syscall 3 to linux
+_tux_exec: Testing header...
+_tux_exec: ELF magic verified
+_tux_exec: x86-64 ELF verified
+_tux_exec: Wiping Memory Map:
+_tux_exec: Wiping PDAs:
+tux_delegate: Delegating syscall 59 to linux
+_tux_exec: Entry point: 0xc30
+_tux_exec: ELF header size: 0x40
+_tux_exec: Program header: 0x40
+_tux_exec: Program header size: 0x38
+_tux_exec: Program count: 0x7
+_tux_exec: Section header: 0x274c8
+_tux_exec: Section header size: 0x40
+_tux_exec: Section count: 0x1a
+_tux_exec: Static linked ELF detected!
+_tux_exec: Start loading...
+_tux_exec: Loading Segment #0/7...
+tux_mmap: TUX: mmap with flags: 32
+tux_mmap: TUX: mmap get vma
+tux_mmap: TUX: mmap get mem
+tux_mmap: TUX: mmap allocated 0x26000 bytes at 0x8001000
+tux_mmap: TUX: mmap try to fix position at 0
+map_pages: Creating mapping 0 26000
+map_pages: Mapping: 0 - 26000
+map_pages: Insert at End
+map_pages: New pda: 0 - 200000 8027000
+temp_map: Temp map 8027000 - 8227000
+temp_map: Temp map 8000000 - 8001000
+map_pages: TUX: mmap maped 0x26000 bytes at 0x0, backed by 0x8001000
+tux_delegate: Delegating syscall 9 to linux
+_tux_exec: Section [00]                          Virtual address: 0x0000000000000000     size: 0x000000000000000                                        0
+_tux_exec: Section [01] .note.gnu.build-id       Virtual address: 0x00000000000001c8     size: 0x000000000000002                                        4
+_tux_exec: Section [02] .hash                    Virtual address: 0x00000000000001f0     size: 0x00000000000000c                                        0
+_tux_exec: Section [03] .gnu.hash                Virtual address: 0x00000000000002b0     size: 0x00000000000000e                                        0
+_tux_exec: Section [04] .dynsym                  Virtual address: 0x0000000000000390     size: 0x00000000000002b                                        8
+_tux_exec: Section [05] .dynstr                  Virtual address: 0x0000000000000648     size: 0x00000000000001a                                        7
+_tux_exec: Section [06] .gnu.version             Virtual address: 0x00000000000007f0     size: 0x000000000000003                                        a
+_tux_exec: Section [07] .gnu.version_d           Virtual address: 0x0000000000000830     size: 0x00000000000000a                                        4
+_tux_exec: Section [08] .rela.dyn                Virtual address: 0x00000000000008d8     size: 0x000000000000012                                        0
+_tux_exec: Section [09] .rela.plt                Virtual address: 0x00000000000009f8     size: 0x000000000000006                                        0
+_tux_exec: Section [10] .plt                     Virtual address: 0x0000000000000a60     size: 0x000000000000005                                        0
+_tux_exec: Section [11] .plt.got                 Virtual address: 0x0000000000000ab0     size: 0x000000000000000                                        8
+_tux_exec: Section [12] .text                    Virtual address: 0x0000000000000ac0     size: 0x000000000001dd0                                        0
+_tux_exec: Section [13] .rodata                  Virtual address: 0x000000000001e7c0     size: 0x00000000000040c                                        0
+_tux_exec: Section [14] .stapsdt.base            Virtual address: 0x0000000000022880     size: 0x000000000000000                                        1
+_tux_exec: Section [15] .eh_frame_hdr            Virtual address: 0x0000000000022884     size: 0x000000000000064                                        4
+_tux_exec: Section [16] .eh_frame                Virtual address: 0x0000000000022ec8     size: 0x00000000000024e                                        8
+_tux_exec: Loading Segment #1/7...
+tux_mmap: TUX: mmap with flags: 32
+tux_mmap: TUX: mmap get vma
+tux_mmap: TUX: mmap get mem
+tux_mmap: TUX: mmap allocated 0x3000 bytes at 0x8028000
+tux_mmap: TUX: mmap try to fix position at 225000
+map_pages: Creating mapping 225000 228000
+map_pages: Mapping: 225000 - 228000
+map_pages: Insert at End
+map_pages: New pda: 200000 - 400000 802b000
+temp_map: Temp map 802b000 - 822b000
+temp_map: Temp map 8000000 - 8001000
+map_pages: TUX: mmap maped 0x3000 bytes at 0x225000, backed by 0x8028000
+tux_delegate: Delegating syscall 9 to linux
+_tux_exec: Section [17] .data.rel.ro             Virtual address: 0x0000000000225bc0     size: 0x00000000000002b                                        c
+_tux_exec: Section [18] .dynamic                 Virtual address: 0x0000000000225e80     size: 0x000000000000017                                        0
+_tux_exec: Section [19] .got                     Virtual address: 0x0000000000225ff0     size: 0x000000000000001                                        0
+_tux_exec: Section [20] .got.plt                 Virtual address: 0x0000000000226000     size: 0x000000000000003                                        8
+_tux_exec: Section [21] .data                    Virtual address: 0x0000000000226040     size: 0x0000000000000f8                                        0
+_tux_exec: Setting up stack
+tux_mmap: TUX: mmap with flags: 32
+tux_mmap: TUX: mmap get vma
+tux_mmap: TUX: mmap get mem
+tux_mmap: TUX: mmap allocated 0x800000 bytes at 0x802c000
+tux_mmap: TUX: mmap try to fix position at f800000
+map_pages: Creating mapping f800000 10000000
+map_pages: Mapping: f800000 - 10000000
+map_pages: Insert at End
+map_pages: New pda: f800000 - 10000000 882c000
+temp_map: Temp map 882c000 - 902c000
+temp_map: Temp map 8000000 - 8001000
+map_pages: TUX: mmap maped 0x800000 bytes at 0xf800000, backed by 0x802c000
+tux_delegate: Delegating syscall 9 to linux
+_tux_exec: Setting up heap
+tux_mmap: TUX: mmap with flags: 32
+tux_mmap: TUX: mmap get vma
+tux_mmap: TUX: mmap get mem
+tux_mmap: TUX: mmap allocated 0x200000 bytes at 0x8830000
+tux_mmap: TUX: mmap try to fix position at f600000
+map_pages: Creating mapping f600000 f800000
+map_pages: Mapping: f600000 - f800000
+map_pages: f600000, Between: 400000, and f800000 - 10000000
+map_pages: New pda: f600000 - f800000 8a30000
+temp_map: Temp map 8a30000 - 8a31000
+temp_map: Temp map 8000000 - 8001000
+map_pages: f800000 Overlapping: f800000 - 10000000
+temp_map: Temp map 882c000 - 8830000
+map_pages: TUX: mmap maped 0x200000 bytes at 0xf600000, backed by 0x8830000
+tux_delegate: Delegating syscall 9 to linux
+_tux_exec: Preparing _ehdr
+_tux_exec: Starting, jumping to: 0xc30
+syscall_handler: SYSCALL Entry nbr: 12
+syscall_handler: SYSCALL Task: 3 SRC: 000000000001a429
+syscall_handler: SYSCALL JMP: 000000010094b99a
+syscall_handler:   PARAM: 0000000000000000 0000000000000c30 000000000fffe75d
+syscall_handler:        : 0000000000000000 0000000000000000 0000000000000000
+linux_interface: Linux Subsystem call: 12
+linux_interface: ret = f600000
+syscall_handler: END SYSCALL 12 Task: 3 ret:f600000
+syscall_handler: SYSCALL Entry nbr: 2
+syscall_handler: SYSCALL Task: 3 SRC: 000000000001b2d7
+syscall_handler: SYSCALL JMP: 000000010094b502
+syscall_handler:   PARAM: 0000000000227168 0000000000080000 0000000000000000
+syscall_handler:        : 000000000fffe7c1 0000000020000000 000000000fffe07c
+linux_interface: Linux Subsystem call: 2
+tux_open_delegate: Open/Socket syscall 2, path: /bin/echo, flag: 80000
+tux_open_delegate: Local open Flags: 0x1
+tux_local: Local syscall 2, 581
+tux_open_delegate: Unknown error
+tux_delegate: Delegating syscall 2 to linux
+tux_open_delegate: Open/Socket fd: 5
+linux_interface: ret = 5
+syscall_handler: END SYSCALL 2 Task: 3 ret:5
+syscall_handler: SYSCALL Entry nbr: 0
+syscall_handler: SYSCALL Task: 3 SRC: 000000000001b2f7
+syscall_handler: SYSCALL JMP: 000000010094b346
+syscall_handler:   PARAM: 0000000000000005 000000000fffe095 0000000000000340
+syscall_handler:        : 000000000fffe7c1 0000000020000000 000000000fffe07c
+linux_interface: Linux Subsystem call: 0
+tux_file_delegate: Multiplexed File related syscall 0, fd: 5
+tux_delegate: Delegating syscall 0 to linux
+linux_interface: ret = 340
+syscall_handler: END SYSCALL 0 Task: 3 ret:340
+syscall_handler: SYSCALL Entry nbr: 5
+syscall_handler: SYSCALL Task: 3 SRC: 000000000001b264
+syscall_handler: SYSCALL JMP: 000000010094c0bf
+syscall_handler:   PARAM: 0000000000000005 000000000fffdf2d 000000000fffdf2d
+syscall_handler:        : 0000000000000010 0000000000227168 0000000000000000
+linux_interface: Linux Subsystem call: 5
+tux_file_delegate: Multiplexed File related syscall 5, fd: 5
+tux_delegate: Delegating syscall 5 to linux
+linux_interface: ret = 0
+syscall_handler: END SYSCALL 5 Task: 3 ret:0
+syscall_handler: SYSCALL Entry nbr: 9
+syscall_handler: SYSCALL Task: 3 SRC: 000000000001b42a
+syscall_handler: SYSCALL JMP: 000000010094c13b
+syscall_handler:   PARAM: 0000000000400000 0000000000007000 0000000000000005
+syscall_handler:        : 0000000000000812 0000000000000005 0000000000000000
+linux_interface: Linux Subsystem call: 9
+tux_mmap: TUX: mmap with flags: 812
+tux_mmap: TUX: mmap get vma
+tux_mmap: TUX: mmap get mem
+tux_mmap: TUX: mmap allocated 0x7000 bytes at 0x8a31000
+tux_mmap: TUX: mmap try to fix position at 400000
+map_pages: Creating mapping 400000 407000
+map_pages: Mapping: 400000 - 407000
+map_pages: 400000, Between: 400000, and f600000 - f800000
+map_pages: New pda: 400000 - 600000 8a38000
+temp_map: Temp map 8a38000 - 8a39000
+temp_map: Temp map 8000000 - 8001000
+map_pages: TUX: mmap maped 0x7000 bytes at 0x400000, backed by 0x8a31000
+tux_delegate: Delegating syscall 9 to linux
+tux_delegate: Delegating syscall 89 to linux
+tux_delegate: Delegating syscall 9 to linux
+linux_interface: ret = 400000
+syscall_handler: END SYSCALL 9 Task: 3 ret:400000
+syscall_handler: SYSCALL Entry nbr: 9
+syscall_handler: SYSCALL Task: 3 SRC: 000000000001b42a
+syscall_handler: SYSCALL JMP: 000000010094c13b
+syscall_handler:   PARAM: 0000000000606000 0000000000002000 0000000000000003
+syscall_handler:        : 0000000000000812 0000000000000005 0000000000006000
+linux_interface: Linux Subsystem call: 9
+tux_mmap: TUX: mmap with flags: 812
+tux_mmap: TUX: mmap get vma
+tux_mmap: TUX: mmap get mem
+tux_mmap: TUX: mmap allocated 0x2000 bytes at 0x8a39000
+tux_mmap: TUX: mmap try to fix position at 606000
+map_pages: Creating mapping 606000 608000
+map_pages: Mapping: 606000 - 608000
+map_pages: 606000, Between: 600000, and f600000 - f800000
+map_pages: New pda: 600000 - 800000 8a3b000
+temp_map: Temp map 8a3b000 - 8a3c000
+temp_map: Temp map 8000000 - 8001000
+map_pages: TUX: mmap maped 0x2000 bytes at 0x606000, backed by 0x8a39000
+tux_delegate: Delegating syscall 9 to linux
+tux_delegate: Delegating syscall 89 to linux
+tux_delegate: Delegating syscall 9 to linux
+linux_interface: ret = 606000
+syscall_handler: END SYSCALL 9 Task: 3 ret:606000
+syscall_handler: SYSCALL Entry nbr: 3
+syscall_handler: SYSCALL Task: 3 SRC: 000000000001b3d7
+syscall_handler: SYSCALL JMP: 000000010094c076
+syscall_handler:   PARAM: 0000000000000005 00000000002271b8 0000000000000000
+syscall_handler:        : 0000000000000031 0000000000000000 0000000070000021
+linux_interface: Linux Subsystem call: 3
+tux_file_delegate: Multiplexed File related syscall 3, fd: 5
+tux_delegate: Delegating syscall 3 to linux
+linux_interface: ret = 0
+syscall_handler: END SYSCALL 3 Task: 3 ret:0
+syscall_handler: SYSCALL Entry nbr: 63
+syscall_handler: SYSCALL Task: 3 SRC: 000000000001b507
+syscall_handler: SYSCALL JMP: 000000010094b2a8
+syscall_handler:   PARAM: 000000000fffe24d 00000000000007ac 0000000000000000
+syscall_handler:        : 000000000001c9a0 0000000000000000 0000000000000000
+linux_interface: Linux Subsystem call: 63
+tux_delegate: Delegating syscall 63 to linux
+linux_interface: ret = 0
+syscall_handler: END SYSCALL 63 Task: 3 ret:0
+syscall_handler: SYSCALL Entry nbr: 21
+syscall_handler: SYSCALL Task: 3 SRC: 000000000001b337
+syscall_handler: SYSCALL JMP: 000000010094c5fc
+syscall_handler:   PARAM: 000000000001fd24 0000000000000000 0000000000225e38
+syscall_handler:        : 000000000001c9a0 0000000000000000 0000000000000000
+linux_interface: Linux Subsystem call: 21
+tux_delegate: Delegating syscall 21 to linux
+linux_interface: ret = fffffffffffffffe
+syscall_handler: END SYSCALL 21 Task: 3 ret:fffffffffffffffe
+syscall_handler: SYSCALL Entry nbr: 21
+syscall_handler: SYSCALL Task: 3 SRC: 000000000001b337
+syscall_handler: SYSCALL JMP: 000000010094c5fc
+syscall_handler:   PARAM: 00000000000224e0 0000000000000004 0000000000000000
+syscall_handler:        : 000000000001c9a0 0000000000000000 0000000000000000
+linux_interface: Linux Subsystem call: 21
+tux_delegate: Delegating syscall 21 to linux
+linux_interface: ret = fffffffffffffffe
+syscall_handler: END SYSCALL 21 Task: 3 ret:fffffffffffffffe
+syscall_handler: SYSCALL Entry nbr: 2
+syscall_handler: SYSCALL Task: 3 SRC: 000000000001b2d7
+syscall_handler: SYSCALL JMP: 000000010094b502
+syscall_handler:   PARAM: 00000000000201d1 0000000000080000 0000000000000001
+syscall_handler:        : 0000000000227490 000000000000ffff 0000000000000000
+linux_interface: Linux Subsystem call: 2
+tux_open_delegate: Open/Socket syscall 2, path: /etc/ld.so.cache, flag: 80000
+tux_open_delegate: Local open Flags: 0x1
+tux_local: Local syscall 2, 581
+tux_open_delegate: Unknown error
+tux_delegate: Delegating syscall 2 to linux
+tux_open_delegate: Open/Socket fd: 5
+linux_interface: ret = 5
+syscall_handler: END SYSCALL 2 Task: 3 ret:5
+syscall_handler: SYSCALL Entry nbr: 5
+syscall_handler: SYSCALL Task: 3 SRC: 000000000001b264
+syscall_handler: SYSCALL JMP: 000000010094c0bf
+syscall_handler:   PARAM: 0000000000000005 000000000fffdc1d 000000000fffdc1d
+syscall_handler:        : 0000000000227490 000000000000ffff 0000000000000000
+linux_interface: Linux Subsystem call: 5
+tux_file_delegate: Multiplexed File related syscall 5, fd: 5
+tux_delegate: Delegating syscall 5 to linux
+linux_interface: ret = 0
+syscall_handler: END SYSCALL 5 Task: 3 ret:0
+syscall_handler: SYSCALL Entry nbr: 9
+syscall_handler: SYSCALL Task: 3 SRC: 000000000001b42a
+syscall_handler: SYSCALL JMP: 000000010094c13b
+syscall_handler:   PARAM: 0000000000000000 0000000000015fc0 0000000000000001
+syscall_handler:        : 0000000000000002 0000000000000005 0000000000000000
+linux_interface: Linux Subsystem call: 9
+tux_mmap: TUX: mmap with flags: 2
+tux_mmap: TUX: mmap get vma
+tux_mmap: TUX: mmap get mem
+tux_mmap: TUX: mmap allocated 0x16000 bytes at 0x8a3c000
+tux_mmap: TUX: mmap trying to allocate 0x15fc0 bytes
+map_pages: Creating mapping 26000 3c000
+map_pages: Mapping: 26000 - 3c000
+map_pages: 26000 Overlapping: 0 - 200000
+temp_map: Temp map 8027000 - 8028000
+map_pages: TUX: mmap maped 0x16000 bytes at 0x26000, backed by 0x8a3c000
+tux_delegate: Delegating syscall 9 to linux
+tux_delegate: Delegating syscall 89 to linux
+tux_delegate: Delegating syscall 9 to linux
+linux_interface: ret = 26000
+syscall_handler: END SYSCALL 9 Task: 3 ret:26000
+syscall_handler: SYSCALL Entry nbr: 3
+syscall_handler: SYSCALL Task: 3 SRC: 000000000001b3d7
+syscall_handler: SYSCALL JMP: 000000010094c076
+syscall_handler:   PARAM: 0000000000000005 0000000000015fc0 0000000000000001
+syscall_handler:        : 0000000000000002 0000000000000005 0000000000000000
+linux_interface: Linux Subsystem call: 3
+tux_file_delegate: Multiplexed File related syscall 3, fd: 5
+tux_delegate: Delegating syscall 3 to linux
+linux_interface: ret = 0
+syscall_handler: END SYSCALL 3 Task: 3 ret:0
+syscall_handler: SYSCALL Entry nbr: 21
+syscall_handler: SYSCALL Task: 3 SRC: 000000000001b337
+syscall_handler: SYSCALL JMP: 000000010094c5fc
+syscall_handler:   PARAM: 000000000001fd24 0000000000000000 0000000000000000
+syscall_handler:        : 0000000000000010 0000000000000005 0000000000000000
+linux_interface: Linux Subsystem call: 21
+tux_delegate: Delegating syscall 21 to linux
+linux_interface: ret = fffffffffffffffe
+syscall_handler: END SYSCALL 21 Task: 3 ret:fffffffffffffffe
+syscall_handler: SYSCALL Entry nbr: 2
+syscall_handler: SYSCALL Task: 3 SRC: 000000000001b2d7
+syscall_handler: SYSCALL JMP: 000000010094b502
+syscall_handler:   PARAM: 00000000002278b8 0000000000080000 0000000000227178
+syscall_handler:        : 00362e6f732e6362 0000000000000000 000000000fffddbc
+linux_interface: Linux Subsystem call: 2
+tux_open_delegate: Open/Socket syscall 2, path: /lib/x86_64-linux-gnu/libc.so.6, flag: 80000
+tux_open_delegate: Local open Flags: 0x1
+tux_local: Local syscall 2, 581
+tux_open_delegate: Unknown error
+tux_delegate: Delegating syscall 2 to linux
+tux_open_delegate: Open/Socket fd: 5
+linux_interface: ret = 5
+syscall_handler: END SYSCALL 2 Task: 3 ret:5
+syscall_handler: SYSCALL Entry nbr: 0
+syscall_handler: SYSCALL Task: 3 SRC: 000000000001b2f7
+syscall_handler: SYSCALL JMP: 000000010094b346
+syscall_handler:   PARAM: 0000000000000005 000000000fffddd5 0000000000000340
+syscall_handler:        : 00362e6f732e6362 0000000000000000 000000000fffddbc
+linux_interface: Linux Subsystem call: 0
+tux_file_delegate: Multiplexed File related syscall 0, fd: 5
+tux_delegate: Delegating syscall 0 to linux
+linux_interface: ret = 340
+syscall_handler: END SYSCALL 0 Task: 3 ret:340
+syscall_handler: SYSCALL Entry nbr: 5
+syscall_handler: SYSCALL Task: 3 SRC: 000000000001b264
+syscall_handler: SYSCALL JMP: 000000010094c0bf
+syscall_handler:   PARAM: 0000000000000005 000000000fffdc6d 000000000fffdc6d
+syscall_handler:        : 0000000000000010 00000000002278b8 0000000000227178
+linux_interface: Linux Subsystem call: 5
+tux_file_delegate: Multiplexed File related syscall 5, fd: 5
+tux_delegate: Delegating syscall 5 to linux
+linux_interface: ret = 0
+syscall_handler: END SYSCALL 5 Task: 3 ret:0
+syscall_handler: SYSCALL Entry nbr: 9
+syscall_handler: SYSCALL Task: 3 SRC: 000000000001b42a
+syscall_handler: SYSCALL JMP: 000000010094c13b
+syscall_handler:   PARAM: 0000000000000000 00000000003c99a0 0000000000000005
+syscall_handler:        : 0000000000000802 0000000000000005 0000000000000000
+linux_interface: Linux Subsystem call: 9
+tux_mmap: TUX: mmap with flags: 802
+tux_mmap: TUX: mmap get vma
+tux_mmap: TUX: mmap get mem
+tux_mmap: TUX: mmap allocated 0x3ca000 bytes at 0x8a52000
+tux_mmap: TUX: mmap trying to allocate 0x3c99a0 bytes
+map_pages: Creating mapping 608000 9d2000
+map_pages: Mapping: 608000 - 9d2000
+map_pages: 608000 Overlapping: 600000 - 800000
+temp_map: Temp map 8a3b000 - 8a3c000
+map_pages: 800000, Between: 800000, and f600000 - f800000
+map_pages: New pda: 800000 - a00000 8e1c000
+temp_map: Temp map 8e1c000 - 8e1d000
+temp_map: Temp map 8000000 - 8001000
+map_pages: TUX: mmap maped 0x3ca000 bytes at 0x608000, backed by 0x8a52000
+tux_delegate: Delegating syscall 9 to linux
+tux_delegate: Delegating syscall 89 to linux
+tux_delegate: Delegating syscall 9 to linux
+linux_interface: ret = 608000
+syscall_handler: END SYSCALL 9 Task: 3 ret:608000
+syscall_handler: SYSCALL Entry nbr: 10
+syscall_handler: SYSCALL Task: 3 SRC: 000000000001b4c7
+syscall_handler: SYSCALL JMP: 000000010094c16e
+syscall_handler:   PARAM: 00000000007c8000 0000000000200000 0000000000000000
+syscall_handler:        : 0000000000000000 0000000000000005 0000000000000000
+linux_interface: Linux Subsystem call: 10
+linux_interface: ret = 0
+syscall_handler: END SYSCALL 10 Task: 3 ret:0
+syscall_handler: SYSCALL Entry nbr: 9
+syscall_handler: SYSCALL Task: 3 SRC: 000000000001b42a
+syscall_handler: SYSCALL JMP: 000000010094c13b
+syscall_handler:   PARAM: 00000000009c8000 0000000000006000 0000000000000003
+syscall_handler:        : 0000000000000812 0000000000000005 00000000001c0000
+linux_interface: Linux Subsystem call: 9
+tux_mmap: TUX: mmap with flags: 812
+tux_mmap: TUX: mmap get vma
+tux_mmap: TUX: mmap get mem
+tux_mmap: TUX: mmap allocated 0x6000 bytes at 0x8e1d000
+tux_mmap: TUX: mmap try to fix position at 9c8000
+make_vma_free: Break2
+map_pages: Creating mapping 9c8000 9ce000
+map_pages: Mapping: 9c8000 - 9ce000
+map_pages: 9c8000 Overlapping: 800000 - a00000
+temp_map: Temp map 8e1c000 - 8e1d000
+map_pages: TUX: mmap maped 0x6000 bytes at 0x9c8000, backed by 0x8e1d000
+tux_delegate: Delegating syscall 9 to linux
+tux_delegate: Delegating syscall 89 to linux
+tux_delegate: Delegating syscall 9 to linux
+linux_interface: ret = 9c8000
+syscall_handler: END SYSCALL 9 Task: 3 ret:9c8000
+syscall_handler: SYSCALL Entry nbr: 9
+syscall_handler: SYSCALL Task: 3 SRC: 000000000001b42a
+syscall_handler: SYSCALL JMP: 000000010094c13b
+syscall_handler:   PARAM: 00000000009ce000 00000000000039a0 0000000000000003
+syscall_handler:        : 0000000000000032 ffffffffffffffff 0000000000000000
+linux_interface: Linux Subsystem call: 9
+tux_mmap: TUX: mmap with flags: 32
+tux_mmap: TUX: mmap get vma
+tux_mmap: TUX: mmap get mem
+tux_mmap: TUX: mmap allocated 0x4000 bytes at 0x8e12000
+tux_mmap: TUX: mmap try to fix position at 9ce000
+make_vma_free: removing covered
+map_pages: Creating mapping 9ce000 9d2000
+map_pages: Mapping: 9ce000 - 9d2000
+map_pages: 9ce000 Overlapping: 800000 - a00000
+temp_map: Temp map 8e1c000 - 8e1d000
+map_pages: TUX: mmap maped 0x4000 bytes at 0x9ce000, backed by 0x8e12000
+tux_delegate: Delegating syscall 9 to linux
+linux_interface: ret = 9ce000
+syscall_handler: END SYSCALL 9 Task: 3 ret:9ce000
+syscall_handler: SYSCALL Entry nbr: 3
+syscall_handler: SYSCALL Task: 3 SRC: 000000000001b3d7
+syscall_handler: SYSCALL JMP: 000000010094c076
+syscall_handler:   PARAM: 0000000000000005 0000000000227918 0000000000000000
+syscall_handler:        : 0000000000000031 0000000000608000 0000000070000021
+linux_interface: Linux Subsystem call: 3
+tux_file_delegate: Multiplexed File related syscall 3, fd: 5
+tux_delegate: Delegating syscall 3 to linux
+linux_interface: ret = 0
+syscall_handler: END SYSCALL 3 Task: 3 ret:0
+syscall_handler: SYSCALL Entry nbr: 9
+syscall_handler: SYSCALL Task: 3 SRC: 000000000001b42a
+syscall_handler: SYSCALL JMP: 000000010094c13b
+syscall_handler:   PARAM: 0000000000000000 0000000000001000 0000000000000003
+syscall_handler:        : 0000000000000022 ffffffffffffffff 0000000000000000
+linux_interface: Linux Subsystem call: 9
+tux_mmap: TUX: mmap with flags: 22
+tux_mmap: TUX: mmap get vma
+tux_mmap: TUX: mmap get mem
+tux_mmap: TUX: mmap allocated 0x1000 bytes at 0x8e16000
+tux_mmap: TUX: mmap trying to allocate 0x1000 bytes
+map_pages: Creating mapping 3c000 3d000
+map_pages: Mapping: 3c000 - 3d000
+map_pages: 3c000 Overlapping: 0 - 200000
+temp_map: Temp map 8027000 - 8028000
+map_pages: TUX: mmap maped 0x1000 bytes at 0x3c000, backed by 0x8e16000
+tux_delegate: Delegating syscall 9 to linux
+linux_interface: ret = 3c000
+syscall_handler: END SYSCALL 9 Task: 3 ret:3c000
+syscall_handler: SYSCALL Entry nbr: 9
+syscall_handler: SYSCALL Task: 3 SRC: 000000000001b42a
+syscall_handler: SYSCALL JMP: 000000010094c13b
+syscall_handler:   PARAM: 0000000000000000 0000000000001000 0000000000000003
+syscall_handler:        : 0000000000000022 ffffffffffffffff 0000000000000000
+linux_interface: Linux Subsystem call: 9
+tux_mmap: TUX: mmap with flags: 22
+tux_mmap: TUX: mmap get vma
+tux_mmap: TUX: mmap get mem
+tux_mmap: TUX: mmap allocated 0x1000 bytes at 0x8e17000
+tux_mmap: TUX: mmap trying to allocate 0x1000 bytes
+map_pages: Creating mapping 3d000 3e000
+map_pages: Mapping: 3d000 - 3e000
+map_pages: 3d000 Overlapping: 0 - 200000
+temp_map: Temp map 8027000 - 8028000
+map_pages: TUX: mmap maped 0x1000 bytes at 0x3d000, backed by 0x8e17000
+tux_delegate: Delegating syscall 9 to linux
+linux_interface: ret = 3d000
+syscall_handler: END SYSCALL 9 Task: 3 ret:3d000
+syscall_handler: SYSCALL Entry nbr: 158
+syscall_handler: SYSCALL Task: 3 SRC: 0000000000000bd5
+syscall_handler: SYSCALL JMP: 0000000000000000
+syscall_handler:   PARAM: 0000000000001002 000000000003ce40 000000000003e000
+syscall_handler:        : 0000000000000022 ffffffffffffffff 0000000000000000
+linux_interface: Linux Subsystem call: 158
+linux_interface: ret = 0
+syscall_handler: END SYSCALL 158 Task: 3 ret:0
+syscall_handler: SYSCALL Entry nbr: 10
+syscall_handler: SYSCALL Task: 3 SRC: 000000000001b4c7
+syscall_handler: SYSCALL JMP: 000000010094c16e
+syscall_handler:   PARAM: 00000000009c8000 0000000000004000 0000000000000001
+syscall_handler:        : 0000000000225ca0 0000000000000000 00000000002278d8
+linux_interface: Linux Subsystem call: 10
+linux_interface: ret = 0
+syscall_handler: END SYSCALL 10 Task: 3 ret:0
+syscall_handler: SYSCALL Entry nbr: 10
+syscall_handler: SYSCALL Task: 3 SRC: 000000000001b4c7
+syscall_handler: SYSCALL JMP: 000000010094c16e
+syscall_handler:   PARAM: 0000000000606000 0000000000001000 0000000000000001
+syscall_handler:        : 0000000000607240 0000000000000000 00000000002278d8
+linux_interface: Linux Subsystem call: 10
+linux_interface: ret = 0
+syscall_handler: END SYSCALL 10 Task: 3 ret:0
+syscall_handler: SYSCALL Entry nbr: 10
+syscall_handler: SYSCALL Task: 3 SRC: 000000000001b4c7
+syscall_handler: SYSCALL JMP: 000000010094c16e
+syscall_handler:   PARAM: 0000000000225000 0000000000001000 0000000000000001
+syscall_handler:        : 0000000000226030 0000000000000000 00000000002278d8
+linux_interface: Linux Subsystem call: 10
+linux_interface: ret = 0
+syscall_handler: END SYSCALL 10 Task: 3 ret:0
+syscall_handler: SYSCALL Entry nbr: 11
+syscall_handler: SYSCALL Task: 3 SRC: 000000000001b4a7
+syscall_handler: SYSCALL JMP: 000000010094c182
+syscall_handler:   PARAM: 0000000000026000 0000000000015fc0 0000c2f600000000
+syscall_handler:        : 0000000000226030 0000000000000000 00000000002278d8
+linux_interface: Linux Subsystem call: 11
+tux_munmap: TUX: munmap 26000 - 3c000
+make_vma_free: removing covered
+map_pages: Creating mapping 26000 3c000
+map_pages: Mapping: 26000 - 3c000
+map_pages: 26000 Overlapping: 0 - 200000
+temp_map: Temp map 8027000 - 8028000
+map_pages: TUX: mmap maped 0x16000 bytes at 0x26000, backed by 0xffffffff
+linux_interface: ret = 0
+syscall_handler: END SYSCALL 11 Task: 3 ret:0
+syscall_handler: SYSCALL Entry nbr: 12
+syscall_handler: SYSCALL Task: 3 SRC: 0000000000704f19
+syscall_handler: SYSCALL JMP: 000000010094b99a
+syscall_handler:   PARAM: 0000000000000000 00000000009ccb20 00000000009ccb78
+syscall_handler:        : 00000000009ccb78 00000000006b49b0 000000000000000d
+linux_interface: Linux Subsystem call: 12
+linux_interface: ret = f600000
+syscall_handler: END SYSCALL 12 Task: 3 ret:f600000
+syscall_handler: SYSCALL Entry nbr: 12
+syscall_handler: SYSCALL Task: 3 SRC: 0000000000704f19
+syscall_handler: SYSCALL JMP: 000000010094b99a
+syscall_handler:   PARAM: 000000000f621000 00000000009ccb20 000000000f600000
+syscall_handler:        : 00000000009ccb78 00000000006b49b0 000000000000000d
+linux_interface: Linux Subsystem call: 12
+linux_interface: ret = f621000
+syscall_handler: END SYSCALL 12 Task: 3 ret:f621000
+syscall_handler: SYSCALL Entry nbr: 2
+syscall_handler: SYSCALL Task: 3 SRC: 00000000006347e3
+syscall_handler: SYSCALL JMP: 000000010094b502
+syscall_handler:   PARAM: 000000000079b860 0000000000080000 0000000000000000
+syscall_handler:        : 00000000009ccb78 000000000f600010 0000000000000000
+linux_interface: Linux Subsystem call: 2
+tux_open_delegate: Open/Socket syscall 2, path: /usr/lib/locale/locale-archive, flag: 80000
+tux_open_delegate: Local open Flags: 0x1
+tux_local: Local syscall 2, 581
+tux_open_delegate: Unknown error
+tux_delegate: Delegating syscall 2 to linux
+tux_open_delegate: Open/Socket fd: 5
+linux_interface: ret = 5
+syscall_handler: END SYSCALL 2 Task: 3 ret:5
+syscall_handler: SYSCALL Entry nbr: 5
+syscall_handler: SYSCALL Task: 3 SRC: 00000000006fed34
+syscall_handler: SYSCALL JMP: 000000010094c0bf
+syscall_handler:   PARAM: 0000000000000005 00000000009cd980 00000000009cd980
+syscall_handler:        : 00000000009ccb78 000000000f600010 0000000000000000
+linux_interface: Linux Subsystem call: 5
+tux_file_delegate: Multiplexed File related syscall 5, fd: 5
+tux_delegate: Delegating syscall 5 to linux
+linux_interface: ret = 0
+syscall_handler: END SYSCALL 5 Task: 3 ret:0
+syscall_handler: SYSCALL Entry nbr: 9
+syscall_handler: SYSCALL Task: 3 SRC: 00000000007097ba
+syscall_handler: SYSCALL JMP: 000000010094c13b
+syscall_handler:   PARAM: 0000000000000000 0000000000489e00 0000000000000001
+syscall_handler:        : 0000000000000002 0000000000000005 0000000000000000
+linux_interface: Linux Subsystem call: 9
+tux_mmap: TUX: mmap with flags: 2
+tux_mmap: TUX: mmap get vma
+tux_mmap: TUX: mmap get mem
+tux_mmap: TUX: mmap allocated 0x48a000 bytes at 0x8e23000
+tux_mmap: TUX: mmap trying to allocate 0x489e00 bytes
+map_pages: Creating mapping 9d2000 e5c000
+map_pages: Mapping: 9d2000 - e5c000
+map_pages: 9d2000 Overlapping: 800000 - a00000
+temp_map: Temp map 8e1c000 - 8e1d000
+map_pages: a00000, Between: a00000, and f600000 - f800000
+map_pages: New pda: a00000 - 1000000 8a3c000
+temp_map: Temp map 8a3c000 - 8a3f000
+temp_map: Temp map 8000000 - 8001000
+map_pages: TUX: mmap maped 0x48a000 bytes at 0x9d2000, backed by 0x8e23000
+tux_delegate: Delegating syscall 9 to linux
+tux_delegate: Delegating syscall 89 to linux
+tux_delegate: Delegating syscall 9 to linux
+linux_interface: ret = 9d2000
+syscall_handler: END SYSCALL 9 Task: 3 ret:9d2000
+syscall_handler: SYSCALL Entry nbr: 3
+syscall_handler: SYSCALL Task: 3 SRC: 0000000000634888
+syscall_handler: SYSCALL JMP: 000000010094c076
+syscall_handler:   PARAM: 0000000000000005 0000000000489e00 0000000000002b9a
+syscall_handler:        : 0000000000000002 0000000000000005 0000000000000000
+linux_interface: Linux Subsystem call: 3
+tux_file_delegate: Multiplexed File related syscall 3, fd: 5
+tux_delegate: Delegating syscall 3 to linux
+linux_interface: ret = 0
+syscall_handler: END SYSCALL 3 Task: 3 ret:0
+syscall_handler: SYSCALL Entry nbr: 5
+syscall_handler: SYSCALL Task: 3 SRC: 00000000006fed34
+syscall_handler: SYSCALL JMP: 000000010094c0bf
+syscall_handler:   PARAM: 0000000000000001 000000000fffe390 000000000fffe390
+syscall_handler:        : 00000000000008ad 0000000000001004 0000000000000000
+linux_interface: Linux Subsystem call: 5
+tux_file_delegate: Multiplexed File related syscall 5, fd: 1
+tux_delegate: Delegating syscall 5 to linux
+linux_interface: ret = 0
+syscall_handler: END SYSCALL 5 Task: 3 ret:0
+syscall_handler: SYSCALL Entry nbr: 1
+syscall_handler: SYSCALL Task: 3 SRC: 00000000006ff3c0
+syscall_handler: SYSCALL JMP: 000000010094b360
+syscall_handler:   PARAM: 0000000000000001 000000000f601f80 0000000000000018
+syscall_handler:        : 0000000000000897 0000000000001004 0000000000000000
+linux_interface: Linux Subsystem call: 1
+tux_file_delegate: Multiplexed File related syscall 1, fd: 1
+tux_delegate: Delegating syscall 1 to linux
+linux_interface: ret = 18
+syscall_handler: END SYSCALL 1 Task: 3 ret:18
+syscall_handler: SYSCALL Entry nbr: 3
+syscall_handler: SYSCALL Task: 3 SRC: 000000000068035b
+syscall_handler: SYSCALL JMP: 000000010094c076
+syscall_handler:   PARAM: 0000000000000001 000000000f601f80 0000000000000000
+syscall_handler:        : 0000000000000477 000000000003ce40 000000000003ce40
+linux_interface: Linux Subsystem call: 3
+tux_file_delegate: Multiplexed File related syscall 3, fd: 1
+tux_delegate: Delegating syscall 3 to linux
+linux_interface: ret = 0
+syscall_handler: END SYSCALL 3 Task: 3 ret:0
+syscall_handler: SYSCALL Entry nbr: 3
+syscall_handler: SYSCALL Task: 3 SRC: 000000000068035b
+syscall_handler: SYSCALL JMP: 000000010094c076
+syscall_handler:   PARAM: 0000000000000002 0000000000000001 0000000000000000
+syscall_handler:        : 0000000000000477 000000000003ce40 000000000003ce40
+linux_interface: Linux Subsystem call: 3
+tux_file_delegate: Multiplexed File related syscall 3, fd: 2
+tux_delegate: Delegating syscall 3 to linux
+linux_interface: ret = 0
+syscall_handler: END SYSCALL 3 Task: 3 ret:0
+syscall_handler: SYSCALL Entry nbr: 231
+syscall_handler: SYSCALL Task: 3 SRC: 00000000006d47c8
+syscall_handler: SYSCALL JMP: 000000010097d8f8
+syscall_handler:   PARAM: 0000000000000000 000000000000003c 0000000000000000
+syscall_handler:        : 000000000fffe440 00000000000000e7 ffffffffffffff98
+linux_interface: Linux Subsystem call: 231
+tux_delegate: Delegating syscall 231 to linux
+tux_exit: PID 3 exiting
+up_assert: Assertion failed at file:mm_gran/mm_granfree.c line: 66 task: Idle Task
+
